@@ -23,12 +23,12 @@ module.exports = React.createClass({
 
         return (
 
-            <div className="product" draggable="true"
+            <div className='product' draggable='true'
                 onDragStart={ this._OnDragStart }>
                 <strong>Test product</strong>
                 <br/>
                 <p>Here comes some description.</p>
-                <button onClick={ this._OnClick } className="add-to-cart">Add to cart</button>
+                <button onClick={ this._OnClick } className='add-to-cart'>Add to cart</button>
             </div>
         );
     }
