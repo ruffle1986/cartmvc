@@ -77,7 +77,7 @@ gulp.task('watchLess', function () {
 });
 
 gulp.task('eslint', function () {
-    gulp.src(['src/**/*.js'])
+    return gulp.src(['src/**/*.js'])
         .pipe(react())
         .pipe(eslint())
         .pipe(eslint.format());
