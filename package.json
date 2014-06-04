@@ -1,42 +1,44 @@
 {
-    "name": "cart",
-    "version": "0.0.0",
-    "description": "",
-    "main": "index.js",
-    "directories": {
-        "example": "examples"
-    },
-    "scripts": {
-        "test": "jest"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "browserify": "^4.1.5",
-        "envify": "^1.2.1",
-        "gulp": "^3.6.2",
-        "gulp-less": "^1.2.3",
-        "gulp-plumber": "^0.6.2",
-        "gulp-react": "^0.3.3",
-        "gulp-recess": "^0.3.1",
-        "gulp-rename": "^1.2.0",
-        "gulp-uglify": "^0.3.0",
-        "gulp-watch": "^0.6.5",
-        "jest-cli": "^0.1.14",
-        "lodash": "^2.4.1",
-        "react": "^0.10.0",
-        "react-tools": "^0.10.0",
-        "reactify": "^0.13.1",
-        "vinyl-source-stream": "^0.1.1",
-        "watchify": "^0.10.2"
-    },
-    "jest": {
-        "scriptPreprocessor": "<rootDir>/preprocessor.js",
-        "unmockedModulePathPatterns": [
-            "<rootDir>/node_modules/react"
-        ]
-    },
-    "dependencies": {
-        "jquery": "^2.1.1"
-    }
+  "name": "cart",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^4.1.5",
+    "envify": "^1.2.1",
+    "eslint": "^0.6.2",
+    "gulp": "^3.6.2",
+    "gulp-eslint": "^0.1.7",
+    "gulp-less": "^1.2.3",
+    "gulp-plumber": "^0.6.2",
+    "gulp-react": "^0.3.3",
+    "gulp-recess": "^0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-watch": "^0.6.5",
+    "jest-cli": "^0.1.14",
+    "lodash": "^2.4.1",
+    "react": "^0.10.0",
+    "react-tools": "^0.10.0",
+    "reactify": "^0.13.1",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
 }

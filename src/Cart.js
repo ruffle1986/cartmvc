@@ -1,7 +1,6 @@
 /**
  * @jsx React.DOM
  */
-
 'use strict';
 
 var React       = require('react/addons');
@@ -19,7 +18,7 @@ module.exports = React.createClass({
         return {
             items: [],
             itemsListIsVisible: false
-        }
+        };
     },
 
     _getDocument: function () {
@@ -46,7 +45,7 @@ module.exports = React.createClass({
         var itemInCart;
 
         if ((itemInCart = this.getItem(item.id))) {
-            itemInCart.count += item.count
+            itemInCart.count += item.count;
         } else {
             items.push(item);
         }
@@ -87,7 +86,9 @@ module.exports = React.createClass({
     getTotalItemCount: function () {
         var items = this.state.items;
 
-        if (!items || !items.length) return 0;
+        if (!items || !items.length) {
+            return 0;
+        }
 
         if (items && items.length === 1) {
             return +items[0].count;
@@ -101,7 +102,9 @@ module.exports = React.createClass({
     getTotalPrice: function () {
         var items = this.state.items;
 
-        if (!items || !items.length) return 0;
+        if (!items || !items.length) {
+            return 0;
+        }
 
         if (items && items.length === 1) {
             return +items[0].count * +items[0].price;
@@ -132,7 +135,9 @@ module.exports = React.createClass({
                 timeOutID = null;
             };
 
-            if (!(animClasses = this.props.attentionAnimClasses)) return;
+            if (!(animClasses = this.props.attentionAnimClasses)) {
+                return;
+            }
 
             if (timeOutID) {
                 window.clearTimeout(timeOutID);
@@ -154,7 +159,7 @@ module.exports = React.createClass({
         return this.state.itemsListIsVisible;
     },
 
-    _OnTotalItemsClick: function (e) {
+    _OnTotalItemsClick: function () {
 
         if (this.hasItems()) {
 
