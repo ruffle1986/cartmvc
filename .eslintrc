@@ -1,0 +1,23 @@
+{
+    "env"   : {
+        "browser": true
+    },
+
+    "rules": {
+        "quotes": 0,
+        "no-underscore-dangle": 0,
+        "no-global-strict": 0
+    },
+
+    "globals": {
+        "jasmine": true,
+        "expect": true,
+        "it": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "require": true,
+        "jest": true,
+        "describe": true,
+        "module": true
+    }
+}
