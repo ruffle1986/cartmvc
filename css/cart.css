@@ -1,0 +1,45 @@
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.cart {
+  position: relative;
+  float: left;
+  padding: 10px;
+  border: 1px solid red;
+}
+.cart-item-enter {
+  opacity: 0.01;
+  transition: opacity 500ms ease;
+}
+.cart-item-enter-active {
+  opacity: 1;
+}
+.cart-item-leave {
+  opacity: 1;
+  transition: opacity 150ms ease;
+}
+.cart-item-leave-active {
+  opacity: 0.01;
+}
+.cart-items {
+  position: absolute;
+  top: 58px;
+  left: 5px;
+  opacity: 0.01;
+  transition: opacity 500ms ease;
+}
+.cart--items-visible .cart-items {
+  opacity: 1;
+}
+.product {
+  float: left;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  cursor: move;
+  background-color: yellow;
+  background-image: url('/cart/images/cart.png'), url('/cart/images/shopping_trolley.png');
+  border: 1px solid red;
+}
